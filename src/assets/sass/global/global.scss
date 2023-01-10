@@ -1,18 +1,28 @@
+@import '../global/reset.scss';
+@import '../variables/_fonts.scss';
+@import '../variables/_colors.scss';
+
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
 }
 
 button {
-  background: #FCB72B;
+  background: $main-button-color;
   width: 180px;
   height: 53px;
-  font-family: 'Space Mono';
+  font-family: $main-font;
   font-style: normal;
   font-weight: 700;
-  font-size: 15px;
+  font-size: $main-text-size;
   line-height: 25px;
   text-align: center;
-  color: #FFFFFF;
+  color: $sub-title-color;
   cursor: pointer;
+
+  &:hover {
+    background: #F2F2F2;
+    border: 3px solid $main-button-color;
+    color: $main-button-color;
+  }
 }

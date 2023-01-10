@@ -1,0 +1,343 @@
+.bitmap {
+  background: no-repeat url(/img/bitmap.png);
+  background-size: cover;
+  max-width: 1440px;
+
+  &__container {
+    padding: 152px 165px;
+  }
+
+  &__title {
+    max-width: 500px;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: $h1-size;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: $sub-title-color;
+    margin-bottom: 40px;
+  }
+
+  &__row {
+    max-width: 405px;
+
+    &-text {
+      font-family: $sub-font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: $main-text-size;
+      line-height: 25px;
+      color: $sub-title-color;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+// features
+.main {
+  max-width: 1440px;
+  padding: 160px 165px;
+  background-image: url(/img/bg_line.png);
+  background-repeat: no-repeat;
+  background-position: 0px 200px;
+}
+
+.features {
+  margin: 0 auto;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__cart {
+    max-width: 1275px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+
+    &-row {
+      max-width: 350px;
+      display: flex;
+      flex-direction: column;
+
+      &-img {
+        width: 96px;
+        padding-bottom: 40px;
+      }
+
+      &-title {
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: $h4-size;
+        line-height: 28px;
+        letter-spacing: -1.07143px;
+        color: $cart-title-color;
+        padding-bottom: 20px;
+      }
+
+      &-text {
+        font-family: $sub-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: $main-text-size;
+        line-height: 25px;
+        color: $main-text-color;
+      }
+    }
+  }
+}
+
+.articles {
+  max-width: 1440px;
+  padding: 147px 0;
+
+  &:nth-child(2n+1) {
+    &>.container {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 220px;
+  }
+
+  &__row {
+    max-width: 445px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &-title {
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: 700;
+      font-size: $h2-size;
+      line-height: 48px;
+      padding-bottom: 24px;
+      letter-spacing: -2.14286px;
+      color: $cart-title-color;
+    }
+
+    &-text {
+      font-family: $sub-font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: $main-text-size;
+      line-height: 25px;
+      color: $main-text-color;
+      padding-bottom: 40px;
+    }
+
+
+    &-img {
+      width: 445px;
+
+      & img {
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+// .city {
+//   max-width: 1440px;
+//   padding: 160px 0;
+
+//   &__container {
+//     display: flex;
+//     flex-direction: row-reverse;
+//     justify-content: space-between;
+//     gap: 220px;
+//   }
+
+//   &__row {
+//     width: 445px;
+
+//     &-img {
+//       width: 445px;
+//     }
+//   }
+
+//   &__left {
+//     max-width: 445px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+
+//     &-title {
+//       font-family: $main-font;
+//       font-style: normal;
+//       font-weight: 700;
+//       font-size: $h2-size;
+//       line-height: 48px;
+//       padding-bottom: 24px;
+//       letter-spacing: -2.14286px;
+//       color: $cart-title-color;
+//     }
+
+//     &-text {
+//       font-family: $sub-font;
+//       font-style: normal;
+//       font-weight: 400;
+//       font-size: $main-text-size;
+//       line-height: 25px;
+//       color: $main-text-color;
+//       padding-bottom: 40px;
+//     }
+//   }
+// }
+
+// .zero {
+//   max-width: 1440px;
+//   padding: 147px 0;
+
+//   &__container {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     gap: 220px;
+
+//   }
+
+//   &__row {
+//     max-width: 445px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+
+//     &-title {
+//       font-family: $main-font;
+//       font-style: normal;
+//       font-weight: 700;
+//       font-size: $h2-size;
+//       line-height: 48px;
+//       padding-bottom: 24px;
+//       letter-spacing: -2.14286px;
+//       color: $cart-title-color;
+//     }
+
+//     &-text {
+//       font-family: $sub-font;
+//       font-style: normal;
+//       font-weight: 400;
+//       font-size: $main-text-size;
+//       line-height: 25px;
+//       color: $main-text-color;
+//       padding-bottom: 40px;
+//     }
+//   }
+
+//   &__left {
+//     width: 445px;
+
+//     &-img img {
+//       width: 445px;
+//       border-radius: 50%;
+//     }
+//   }
+// }
+
+.footer {
+  max-width: 1440px;
+}
+
+.sign {
+  max-width: 1440px;
+  background: no-repeat url(/img/mask.png);
+  background-size: cover;
+  padding: 102px 165px;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+  &__row {
+    max-width: 415px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &-title {
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: 700;
+      font-size: $h2-size;
+      line-height: 48px;
+      letter-spacing: -2.14286px;
+      color: $sub-title-color;
+    }
+  }
+
+  &__apps-row {
+    max-width: 360px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    // padding-top: 10px;
+    gap: 28px;
+
+    &-img {
+      width: 100%;
+      gap: 20px;
+    }
+  }
+
+  &__apps {
+    display: flex;
+    height: 56px;
+    align-self: center;
+  }
+}
+
+.nav {
+  max-width: 1440px;
+  background: #333A44;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 35px 165px;
+  }
+
+  &__row {
+    max-width: 108px;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 32px;
+
+    &-title {
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: 700;
+      font-size: $main-text-size;
+      line-height: 25px;
+      color: $main-text-color;
+
+      &:hover {
+        color: $main-button-color;
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+  }
+}

@@ -1,0 +1,44 @@
+// Header section
+.header {
+  max-width: 1440px;
+  padding: 22px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 165px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 58px;
+    padding: 14px;
+  }
+
+  &__logo {
+    max-width: 107px;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+
+    &-title {
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: 700;
+      font-size: $main-text-size;
+      line-height: 25px;
+      color: $main-text-color;
+
+      &:hover {
+        color: $main-button-color;
+      }
+    }
+  }
+}
+
+// Header section end
