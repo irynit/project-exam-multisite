@@ -21,6 +21,7 @@
 .main-about {
   max-width: 1440px;
   padding: 0px 165px;
+
 }
 
 .articles-about {
@@ -160,37 +161,36 @@
 
   &__container {
     max-width: 1440px;
+
   }
 
   &__title {
-    font-family: $sub-font;
+    font-family: 'Space Mono';
     font-style: normal;
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 48px;
     line-height: 48px;
     text-align: center;
     letter-spacing: -2.14286px;
     padding-bottom: 64px;
-    color: #495567
+    color: #495567;
   }
 
   &__row {
     display: flex;
     flex-direction: row;
-    gap: 130px;
+    gap: 105px;
 
     &-left {
       max-width: 350px;
 
       &-title {
-        font-family: $h4-size;
+        font-family: $main-font;
         font-style: normal;
         font-weight: 700;
-        font-size: 24px;
-        line-height: 28px;
-        /* identical to box height, or 117% */
-
-        letter-spacing: -1.07143px;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: -1.78571px;
 
         color: #495567;
       }
@@ -266,8 +266,126 @@
   }
 }
 
+
+
 .active {
   &+.faqs__row-right-text {
+    max-height: 80px;
+    transition: max-height 0.35s;
+    height: 100%;
+  }
+
+  &.faqs__row-right-title::after {
+    transform: rotateZ(270deg);
+  }
+}
+
+.driving {
+  max-width: 1440px;
+  padding-top: 24px;
+
+
+  &__container {
+    max-width: 1440px;
+
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    gap: 105px;
+    padding-bottom: 100px;
+
+    &-left {
+      max-width: 350px;
+
+      &-title {
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+
+
+        letter-spacing: -1.78571px;
+
+        color: #495567;
+      }
+    }
+
+    &-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      gap: 16px;
+      width: 730px;
+
+      &-article {
+        background: #F2F5F9;
+        padding: 32px 40px;
+        align-self: center;
+      }
+
+      &-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      &-arrow {
+        font-size: 34px;
+        text-align: center;
+        color: $main-button-color;
+        cursor: pointer;
+      }
+
+      &-title {
+        font-family: $sub-font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1.07143px;
+        color: #495567;
+        display: flex;
+        flex-direction: space-between;
+        position: relative;
+
+        &::after {
+          content: "❯";
+          font-size: 30px;
+          width: 1em;
+          height: 1em;
+          text-align: center;
+          transition: all 0.35s;
+          transform: rotateZ(90deg);
+          color: $main-button-color;
+          position: absolute;
+          right: 20px;
+          cursor: pointer;
+        }
+      }
+
+      &-text {
+        font-family: $sub-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #495567;
+        margin-top: 24px;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.35s;
+      }
+    }
+  }
+}
+
+.active {
+  &+.driving__row-right-text {
     max-height: 80px;
     transition: max-height 0.35s;
     height: 100%;

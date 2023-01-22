@@ -1,0 +1,58 @@
+.bitmap {
+  max-width: 1440px;
+  &__container {
+    max-width: 1440px;
+  
+}
+}
+.mission {
+  max-width: 1440px;
+    // padding: 147px 0;
+  
+    
+    
+  
+    &__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 220px;
+    }
+  
+    &__row {
+      max-width: 445px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  
+      &-title {
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: $h2-size;
+        line-height: 48px;
+        padding-bottom: 24px;
+        letter-spacing: -2.14286px;
+        color: $cart-title-color;
+      }
+  
+      &-text {
+        font-family: $sub-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: $main-text-size;
+        line-height: 25px;
+        color: $main-text-color;
+        padding-bottom: 40px;
+      }
+  
+  
+      &-img {
+        width: 445px;
+  
+        & img {
+          border-radius: 50%;
+        }
+      }
+    }
+  }
