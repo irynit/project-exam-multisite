@@ -11,22 +11,20 @@
     font-family: $main-font;
     font-style: normal;
     font-weight: 700;
-    font-size: 56px;
-    line-height: 56px;
+    font-size: $h1-size;
+    line-height: $h1-size;
     letter-spacing: -2.5px;
     color: #FFFFFF;
   }
 }
 
-.main-about {
+.main__about {
   max-width: 1440px;
-  padding: 0px 165px;
-
 }
 
 .articles-about {
   max-width: 1440px;
-  padding: 77px 0;
+  padding: 77px 165px;
 
   &:nth-child(2) {
     &>.container {
@@ -52,7 +50,7 @@
       font-style: normal;
       font-weight: 700;
       font-size: $h2-size;
-      line-height: 48px;
+      line-height: $h2-size;
       padding-bottom: 24px;
       letter-spacing: -2.14286px;
       color: $cart-title-color;
@@ -79,21 +77,20 @@
   }
 }
 
+
 .values {
   max-width: 1440px;
 
   &__container {
     max-width: 1440px;
-    padding: 120px 0;
-
   }
 
   &__title {
     font-family: $main-font;
     font-style: normal;
     font-weight: 700;
-    font-size: 48px;
-    line-height: 48px;
+    font-size: $h2-size;
+    line-height: $h2-size;
     text-align: center;
     letter-spacing: -2.14286px;
     color: #495567;
@@ -146,10 +143,7 @@
         font-weight: 400;
         font-size: 15px;
         line-height: 25px;
-
-
         text-align: center;
-
         color: #939CAA;
       }
     }
@@ -161,15 +155,15 @@
 
   &__container {
     max-width: 1440px;
-
+    padding: 0 165px;
   }
 
   &__title {
     font-family: 'Space Mono';
     font-style: normal;
     font-weight: 700;
-    font-size: 48px;
-    line-height: 48px;
+    font-size: $h2-size;
+    line-height: $h2-size;
     text-align: center;
     letter-spacing: -2.14286px;
     padding-bottom: 64px;
@@ -188,10 +182,9 @@
         font-family: $main-font;
         font-style: normal;
         font-weight: 700;
-        font-size: 40px;
-        line-height: 48px;
+        font-size: $h3-size;
+        line-height: $h2-size;
         letter-spacing: -1.78571px;
-
         color: #495567;
       }
     }
@@ -227,7 +220,7 @@
         font-family: $sub-font;
         font-style: normal;
         font-weight: 700;
-        font-size: 24px;
+        font-size: $h4-size;
         line-height: 28px;
         letter-spacing: -1.07143px;
         color: #495567;
@@ -266,8 +259,6 @@
   }
 }
 
-
-
 .active {
   &+.faqs__row-right-text {
     max-height: 80px;
@@ -284,10 +275,8 @@
   max-width: 1440px;
   padding-top: 24px;
 
-
   &__container {
     max-width: 1440px;
-
   }
 
   &__row {
@@ -303,12 +292,9 @@
         font-family: $main-font;
         font-style: normal;
         font-weight: 700;
-        font-size: 40px;
-        line-height: 48px;
-
-
+        font-size: $h3-size;
+        line-height: $h2-size;
         letter-spacing: -1.78571px;
-
         color: #495567;
       }
     }
@@ -317,7 +303,6 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-
       gap: 16px;
       width: 730px;
 
@@ -345,7 +330,7 @@
         font-family: $sub-font;
         font-style: normal;
         font-weight: 700;
-        font-size: 24px;
+        font-size: $h4-size;
         line-height: 28px;
         letter-spacing: -1.07143px;
         color: #495567;
