@@ -92,12 +92,21 @@ function img() {
     .pipe(dest(`${localServer.out}/img`))
 };
 
+// Функція яка закидує .json файли в папу /dist
+function json() {
+  return src(`${localServer.assets}js/**/*.json`)
+    .pipe(changed(`${localServer.out}js/**/*.json`))
+    .pipe(dest(`${localServer.out}js/`))
+}
+
 //Ватч функція яка слідкуя за зміною в файлах в лайв режимі
 function gulpWatch() {
   watch(`${localServer.src}**/*.html`, html);
   watch(`${localServer.assets}sass/**/*.scss`, css);
   watch(`${localServer.assets}js/**/*.js`, js);
   watch(`${localServer.assets}img/**/*`, img);
+  // added for json
+  watch(`${localServer.assets}js/w*.json`, json);
 }
 //Функція яка очіщає папку dist/ кожного разу коли ви стартуете npm start це щоб чистити кеш
 function clean() {
@@ -113,6 +122,6 @@ function server() {
 }
 
 
-exports.dev = parallel(clean, server, html, css, js, img, file, gulpWatch); //тут послідовність функцій які запускаются, наприклад ви можете додати щоб автоматом браузер відкривався openLocal
+exports.dev = parallel(clean, server, html, css, js, json, img, file, gulpWatch); //тут послідовність функцій які запускаются, наприклад ви можете додати щоб автоматом браузер відкривався openLocal
 
-exports.build = parallel(clean, html, css, js, img, file);
+exports.build = parallel(clean, html, css, js, json, img, file);
