@@ -2,7 +2,7 @@
 
 // Get the block where the data will be displayed
 let positionsOut = document.querySelector('.vacancies__row');
-console.log(positionsOut);
+// console.log(positionsOut);
 
 // Fetch data from json file
 fetch('/js/positions.json')

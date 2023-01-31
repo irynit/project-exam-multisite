@@ -106,7 +106,7 @@ function gulpWatch() {
   watch(`${localServer.assets}js/**/*.js`, js);
   watch(`${localServer.assets}img/**/*`, img);
   // added for json
-  watch(`${localServer.assets}js/w*.json`, json);
+  watch(`${localServer.assets}js/**/*.json`, json);
 }
 //Функція яка очіщає папку dist/ кожного разу коли ви стартуете npm start це щоб чистити кеш
 function clean() {
