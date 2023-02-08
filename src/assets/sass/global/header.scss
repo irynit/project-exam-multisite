@@ -42,3 +42,28 @@
 }
 
 // Header section end
+
+@media (max-width: 425px) {
+  .header {
+
+    &__container {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__row {
+      padding: 22px 0;
+      width: 100%;
+      justify-content: center;
+    }
+
+    &__nav {
+      display: none;
+    }
+
+    &__button {
+      display: none;
+    }
+  }
+}

@@ -215,6 +215,10 @@
 
   &__row {
     max-width: 108px;
+
+    &>svg path {
+      fill: #FFFFFF;
+    }
   }
 
   &__menu {
@@ -242,5 +246,9 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 24px;
+
+    & svg:hover path {
+      fill: #E5ECF4;
+    }
   }
 }

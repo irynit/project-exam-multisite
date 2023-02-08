@@ -5,6 +5,15 @@
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
+  background-color: bisque;
+}
+
+@media (max-width: 425px) {
+  .wrapper {
+    max-width: 375px;
+    position: relative;
+    overflow: hidden;
+  }
 }
 
 button {

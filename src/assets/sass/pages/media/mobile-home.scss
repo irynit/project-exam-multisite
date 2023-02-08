@@ -1,0 +1,239 @@
+// Global styles
+@import '../../global/reset.scss';
+@import '../../global/global.scss';
+
+// Colors
+@import './variables/_colors.scss';
+
+// Fonts
+@import './variables/_fonts.scss';
+
+@media (max-width: 425px) {
+  .bitmap {
+    max-width: 375px;
+    background-position: right;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 115px 32px 179px;
+
+    }
+
+    &__title {
+      max-width: 311px;
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 40px;
+      /* or 100% */
+
+      text-align: center;
+      letter-spacing: -1.78571px;
+
+      color: #FFFFFF;
+    }
+
+    &__row {
+      max-width: 311px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &-text {
+        font-family: $sub-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+
+        text-align: center;
+        max-width: 311px;
+        color: #FFFFFF;
+      }
+    }
+
+
+  }
+
+  .main {
+    max-width: 375px;
+    padding: 120px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: none;
+  }
+
+  .features {
+
+    max-width: 375px;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    &__cart {
+      display: flex;
+      flex-direction: column;
+
+      &-row {
+        max-width: 311px;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        &-img {
+          width: 56px;
+
+        }
+
+        &-title {
+          font-family: $main-font;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 28px;
+          /* identical to box height, or 140% */
+
+          text-align: center;
+          letter-spacing: -0.892857px;
+
+          color: #495567;
+        }
+
+        &-text {
+          font-family: 'Lexend Deca';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 25px;
+          /* or 167% */
+
+          text-align: center;
+
+          color: #939CAA;
+        }
+      }
+    }
+  }
+
+  .articles {
+    max-width: 375px;
+    padding: 60px 0;
+
+    &:nth-child(2n+1) {
+      &>.container {
+        flex-direction: column-reverse;
+      }
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 58px;
+    }
+
+    &__row {
+      align-items: center;
+
+      &-title {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        text-align: center;
+        letter-spacing: -1.42857px;
+        color: #495567;
+      }
+
+      &-text {
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: #939CAA;
+      }
+
+      &-img {
+        width: 100%;
+      }
+    }
+  }
+
+  .footer {
+    max-width: 375px;
+  }
+
+  .sign {
+    max-width: 375px;
+    padding: 88px 32px;
+    background-position: right;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+    }
+
+    &__row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &-title {
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        text-align: center;
+        letter-spacing: -1.42857px;
+
+        color: #FFFFFF;
+      }
+    }
+
+
+  }
+
+  .nav {
+    max-width: 375px;
+
+    &__container {
+      flex-direction: column;
+      padding: 64px 128px 88px;
+      align-items: center;
+    }
+
+    &__row {
+      margin-bottom: 42px;
+    }
+
+    &__menu {
+      flex-direction: column;
+      align-items: center;
+      gap: 41px;
+      margin-bottom: 85px;
+
+      &-title {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+      }
+    }
+  }
+
+}
